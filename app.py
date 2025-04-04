@@ -19,7 +19,7 @@ model = load_model('pneumonia_model.h5')
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 # Initialize the Cohere client
-co = cohere.Client("DbqJjall1lDsQewj14wfw5uulIM7DYqKF5CsgJDA")  # Add your Cohere API key here
+co = cohere.Client("YOUR API KEY")  # Add your Cohere API key here
 
 @app.route('/')
 def index():
